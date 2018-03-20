@@ -1,0 +1,788 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #a3aab6
+	opacity: 1
+	font-size: 14px
+
+*:-moz-placeholder
+	color: #a3aab6
+	opacity: 1
+	font-size: 14px
+
+*::-moz-placeholder
+	color: #a3aab6
+	opacity: 1
+	font-size: 14px
+
+*:-ms-input-placeholder
+	color: #a3aab6
+	opacity: 1
+	font-size: 14px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: "TahomaRegular", sans-serif
+	overflow-x: hidden
+
+.main-bg
+	background-image: url(../img/body_bg.jpg)
+	background-position: top center
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+a.btn, button.btn
+	color: #fff
+	background-color: #0573E6
+	padding: 14px 35px
+	border-radius: 4px
+	font-size: 14px
+	+mt(.25s)
+	&:hover
+		color: #fff
+		background-color: #FF8401
+
+.h2-wrap
+	text-align: center
+	h2
+		font-size: 20px
+		text-transform: uppercase
+		font-family: "TahomaBold", sans-serif
+		border: 1px solid #EAC8AE
+		padding: 10px 50px
+		display: inline-block
+		border-radius: 6px
+
+header
+	position: relative
+	.top-line
+		text-align: center
+		padding: 10px	0
+		background-color: #E8EFF4
+		a.logo-wrap
+			display: block
+			text-align: left
+			width: 83px
+			height: 83px
+		.top-img
+			img
+				float: left
+				margin-top: 15px
+			p
+				padding-top: 25px
+		.top-call
+			text-align: right
+			margin-top: 10px
+			span
+				display: block
+				font-size: 20px
+				font-family: "TahomaBold", sans-serif
+			.fa
+				border-bottom: 1px solid transparent
+				margin-right: 5px
+				color: #0573E6
+			a
+				color: #0573E6
+				border-bottom: 1px solid #0573E6
+				font-size: 14px
+				+mt(.25s)
+				&:hover
+					text-decoration: none
+					border-bottom: 1px solid transparent
+	.main-head
+		background-image: url(../img/header_bg2.png)
+		background-repeat: no-repeat
+		background-position: top center
+		h1
+			font-size: 44px
+			color: #466bb2
+			text-transform: uppercase
+			font-family: "TahomaBold", sans-serif
+			margin: 65px 0 55px
+		p
+			display: block
+			width: 370px
+			color: #466bb2
+			line-height: 20px
+		#form
+			position: relative
+			width: 320px
+			max-width: 100%
+			background-color: #fff
+			border-radius: 5px
+			box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+			text-align: center
+			padding: 15px 20px
+			margin-left: 50px
+			margin-top: 135px
+			h3
+				text-transform: uppercase
+				font-size: 20px
+				font-family: "TahomaBold", sans-serif
+				margin-top: 10px
+				margin-bottom: 5px
+			p
+				font-size: 14px
+				color: #909099
+				width: auto
+				margin-bottom: 15px
+			input
+				width: 100%
+				border-radius: 3px
+				border: 1px solid #dddddd
+				margin: 5px	0
+				background-color: #E7EEF5
+				outline: none
+				padding: 5px
+			button.btn
+				margin: 10px 0 0
+			.img-wrap
+				position: absolute
+				bottom: 0
+				right: -100px
+				z-index: -1
+		.relax-item
+			margin-top: 80px
+			margin-bottom: 30px
+			text-align: center
+			display: inline-block
+			p
+				color: #232323
+				font-size: 14px
+				font-family: "TahomaBold", sans-serif
+				display: block
+				width: 200px
+				margin-top: 20px
+
+.s-houses-map
+	background-image: url(../img/houses_bg.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	height: 524px
+	background-size: cover
+	position: relative
+	.houses-map-wrap
+		.housemap1, .housemap2, .housemap3, .housemap4, .housemap5, .housemap6, .servicemap1, .servicemap2, .servicemap3, .dutymap1, .dutymap2, .dutymap3, .dutymap4, .dutymap5, .dutymap6, .dutymap7
+			position: relative
+			display: inline-block
+			position: absolute
+			.hov-house1, .hov-house2, .hov-house3, .hov-house4, .hov-house5, .hov-house6, .hov-servicemap1, .hov-servicemap2, .hov-servicemap3, .hov-duty1, .hov-duty2, .hov-duty3, .hov-duty4, .hov-duty5, .hov-duty6, .hov-duty7
+				display: none
+				height: 155px
+				width: 165px
+				position: relative
+				h4
+					position: absolute
+					top: 5px
+					left: 60px
+					padding: 0
+					font-family: "TahomaBold", sans-serif
+				p
+					position: absolute
+					top: 45px
+					left: 40px
+					font-size: 10px
+					line-height: 12px
+				a
+					position: absolute
+					bottom: 20px
+					left: 60px
+					font-size: 10px
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+		.housemap1
+			height: 95px
+			width: 112px
+			top: 190px
+			left: -30px
+			&:hover
+				.hov-house1
+					display: block
+					position: absolute
+					top: 25px
+					left: 85px
+		.housemap2
+			height: 90px
+			width: 120px
+			top: 117px
+			left: 60px
+			&:hover
+				.hov-house2
+					display: block
+					position: absolute
+					top: 20px
+					left: 80px
+		.housemap3
+			height: 125px
+			width: 190px
+			top: 90px
+			left: 375px
+			&:hover
+				.hov-house3
+					display: block
+					position: absolute
+					top: 20px
+					left: 150px
+		.housemap4
+			height: 125px
+			width: 148px
+			top: 160px
+			right: 340px
+			&:hover
+				.hov-house4
+					display: block 
+					position: absolute
+					top: 35px
+					left: 110px
+		.housemap5
+			height: 125px
+			width: 150px
+			top: 65px
+			right: 180px
+			.hov-house5
+				img.lil
+					display: none
+			&:hover
+				.hov-house5
+					display: block 
+					position: absolute
+					top: 25px
+					left: 110px
+		.housemap6
+			height: 80px
+			width: 100px
+			top: 263px
+			right: 42px
+			.hov-house6
+				img.lil
+					display: none
+			&:hover
+				.hov-house6
+					display: block 
+					position: absolute
+					top: 26px
+					left: 65px
+
+		.servicemap1, .servicemap2, .servicemap3
+			.hov-servicemap1, .hov-servicemap2, .hov-servicemap3
+				p
+					font-size: 14px
+					font-family: "TahomaBold", sans-serif
+					text-align: center
+					padding-top: 25px
+		.servicemap1
+			height: 80px
+			width: 100px
+			top: 400px
+			left: -265px
+			&:hover
+				.hov-servicemap1
+					display: block 
+					position: absolute
+					top: -42px
+					left: 75px
+		.servicemap2
+			height: 45px
+			width: 70px
+			top: 225px
+			left: 205px
+			&:hover
+				.hov-servicemap2
+					display: block 
+					position: absolute
+					top: -50px
+					left: 50px
+		.servicemap3
+			height: 55px
+			width: 60px
+			top: 305px
+			right: 174px
+			&:hover
+				.hov-servicemap3
+					display: block 
+					position: absolute
+					top: -47px
+					left: 45px
+		.dutymap1, .dutymap2, .dutymap3, .dutymap4, .dutymap5, .dutymap6, .dutymap7
+			.hov-duty1, .hov-duty2, .hov-duty3, .hov-duty4, .hov-duty5, .hov-duty6, .hov-duty7
+				p
+					color: #fff
+					font-size: 14px
+					font-family: "TahomaBold", sans-serif
+					text-align: center
+					padding: 65px 0 0 25px
+		.dutymap1
+			height: 30px
+			width: 30px
+			top: 240px
+			left: 117px
+			.hov-duty1
+				p
+					padding: 65px 0 0 33px
+			&:hover
+				.hov-duty1
+					display: block 
+					position: absolute
+					top: -70px
+					left: 20px
+		.dutymap2
+			height: 63px
+			width: 107px
+			top: 126px
+			left: 230px
+			.hov-duty2
+				p
+					padding: 65px 0 0 30px
+			&:hover
+				.hov-duty2
+					display: block 
+					position: absolute
+					top: -40px
+					left: 90px
+		.dutymap3
+			height: 45px
+			width: 60px
+			top: 350px
+			left: 405px
+			.hov-duty3
+				p
+					padding: 65px 0 0 18px
+			&:hover
+				.hov-duty3
+					display: block 
+					position: absolute
+					top: -60px
+					left: 45px
+		.dutymap4
+			height: 50px
+			width: 50px
+			top: 335px
+			left: 565px
+			&:hover
+				.hov-duty4
+					display: block 
+					position: absolute
+					top: -55px
+					left: 30px
+		.dutymap5
+			height: 50px
+			width: 70px
+			top: 330px
+			left: 790px
+			.hov-duty5
+				p
+					padding: 65px 0 0 22px
+			&:hover
+				.hov-duty5
+					display: block 
+					position: absolute
+					top: -55px
+					left: 60px
+		.dutymap6
+			height: 50px
+			width: 60px
+			top: 200px
+			right: 235px
+			&:hover
+				.hov-duty6
+					display: block 
+					position: absolute
+					top: -44px
+					left: 50px
+		.dutymap7
+			height: 18px
+			width: 20px
+			top: 218px
+			right: 160px
+			.hov-duty7
+				p
+					padding: 65px 0 0 0
+			&:hover
+				.hov-duty7
+					display: block 
+					position: absolute
+					top: -73px
+					left: 15px
+
+			
+			
+
+.s-houses
+	background-image: url(../img/sac.png)
+	background-size: cover
+	background-repeat: no-repeat
+
+.relax-wrap
+	text-align: center
+	ul.nav-tabs
+		display: inline-block
+		border: none
+		li
+			margin: 0 50px
+			a
+				color: #232323
+				font-family: "TahomaBold", sans-serif
+				font-size: 14px
+		&:hover
+			a
+				background-color: transparent
+				border: 1px solid transparent
+		li.active
+			a
+				border: 1px solid transparent
+				color: #2B9BD5
+	.tab-content
+		#panel1, #panel2, #panel3
+			.img-wrap
+				img
+					width: 100%
+			h4
+				text-transform: uppercase
+				font-family: "TahomaBold", sans-serif
+				width: 600px
+				display: block
+				font-size: 14px
+				text-align: left
+				margin: 20px auto 5px
+			p
+				font-size: 14px
+				width: 600px
+				display: block
+				margin: 0 auto
+				text-align: left
+				line-height: 20px
+			a.btn
+				padding: 14px 60px
+				margin: 35px 0 30px 0
+
+
+.s-cafe
+	background-image: url(../img/cafe.png)
+	.cafe-wrap
+		.h2-wrap
+			position: relative
+			h2
+				border: 1px solid #E7C7AC
+				margin-bottom: 20px
+			img
+				position: absolute
+				top: -58px
+				right: 260px
+		.tab-content
+			#panel1
+				a.btn
+					padding: 14px 80px
+
+
+.owl-carousel
+	position: relative
+	width: 600px
+	margin: 10px auto
+	.item
+		img
+			width: 100%
+	.owl-nav.disabled
+		display: block
+		.owl-prev, .owl-next
+			position: absolute
+			top: 30px
+			color: #99A5B5
+			+mt(.25s)
+			&:hover
+				color: #232323
+			.fa
+				padding-top: 6px
+		.owl-prev
+			right: -80px
+			width: 50px
+			height: 50px
+			border: 1px solid #ccc
+			border-radius: 50%
+			.fa
+				padding-left: 5px
+		.owl-next
+			width: 50px
+			height: 50px
+			border: 1px solid #ccc
+			left: -80px
+			border-radius: 50%
+
+
+.image-source-link
+	color: #98C3D1
+	cursor: zoom-in
+
+
+.mfp-with-zoom
+	.mfp-container, .mfp-with-zoom.mfp-bg
+		opacity: 0
+		-webkit-backface-visibility: hidden
+		-webkit-transition: all 0.3s ease-out
+		-moz-transition: all 0.3s ease-out
+		-o-transition: all 0.3s ease-out
+		transition: all 0.3s ease-out
+
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    -webkit-backface-visibility: hidden
+    -webkit-transition: all 0.3s ease-out
+    -moz-transition: all 0.3s ease-out
+    -o-transition: all 0.3s ease-out
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
+
+
+.s-kebab
+	background-image: url(../img/kebab.jpg)
+	background-position: 0
+	background-size: cover
+	background-repeat: no-repeat
+	text-align: center
+	padding-bottom: 30px
+	#kebab-popup
+		text-align: center
+		h2
+			font-size: 20px
+			font-family: "TahomaBold", sans-serif
+			color: #fff
+			text-transform: uppercase
+			padding: 35px 0 25px
+			margin: 0
+		input
+			width: 350px
+			max-width: 100%
+			border-radius: 4px
+			border: 1px solid #EBEBEB
+			padding: 6px 10px
+		.inp-left
+			text-align: right
+		button.btn
+			margin: 0
+			display: block
+			margin: 25px auto 0
+
+
+.s-sauna
+	background-image: url(../img/sauna_bg.jpg)
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+	.sauna-wrap 
+		.h2-wrap
+			h2
+				margin: 25px 0
+
+
+.s-services
+	background-image: url(../img/cafe.png)
+	text-align: center
+	padding-bottom: 50px
+	padding-top: 15px
+	.service-item
+		margin-top: 50px
+		margin-bottom: 65px
+		h4
+			margin-top: 30px
+			font-size: 14px
+			font-family: "TahomaBold", sans-serif
+			text-transform: uppercase
+
+
+.s-adv
+	background-image: url(../img/cafe.png)
+	padding-bottom: 80px
+	.adv-item
+		text-align: center
+		margin-top: 45px
+		.img-wrap
+			border-radius: 50%
+			width: 165px
+			height: 165px
+			margin: 0 auto
+			img
+				border: 8px solid #CDD9EA
+				border-radius: 50%
+				width: 160px
+				height: 160px
+		h4
+			font-family: "TahomaBold", sans-serif
+			text-transform: uppercase
+			font-size: 14px
+			margin-bottom: 5px
+		p
+			line-height: 20px
+			font-size: 14px
+
+
+
+.s-gallery
+	background-image: url(../img/gallery_bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	padding-top: 25px
+	.h2-wrap
+		h2
+			margin-top: 0
+			margin-bottom: 25px
+	.img-wrap
+		margin-bottom: 25px
+		img
+			width: 100%
+
+
+.s-about
+	padding-bottom: 40px
+	.h2-wrap
+		h2
+			margin-bottom: 25px
+	.about-item
+		img
+			width: 100%
+
+
+footer
+	background-color: #333
+	color: #ededed
+	font-size: 14px
+	padding: 20px 0 15px
+	.rights
+		text-align: left
+	.politic
+		text-align: right
+
+
+
+//----------------Popup House1-------------
+.white-popup, .white-popup2, .white-popup3, .open-cafe-popup, .white-popup4
+	background: #FFF
+	padding: 20px
+	width: auto
+	max-width: 1260px
+	margin: 20px auto
+	border-radius: 5px
+	position: relative
+	.mfp-close
+		position: absolute
+		top: 0
+		right: 0
+	h3
+		text-align: center
+		font-family: "TahomaBold", sans-serif
+		font-size: 14px
+		text-transform: uppercase
+	.slider-mfp
+		position: relative
+		width: auto
+		.owl-nav
+			.owl-prev, .owl-next
+				position: absolute
+				top: 80px
+			.owl-prev
+				right: -25px
+			.owl-next
+				left: -25px
+	.mini-photo
+		.item
+			img
+				width: 100%
+				height: 120px
+	.plan
+		.item
+			margin-top: 40px
+			img
+				width: 100%
+	.room-opt
+		padding: 10px 15px
+		.fa
+			float: left
+			color: #0573E6
+		p
+			margin: 0 0 25px 30px
+			line-height: 20px
+			font-size: 14px
+	.price
+		text-align: center
+		background-color: #ECECEC
+		border: 4px solid #ddd
+		h3
+			font-family: "TahomaBold", sans-serif
+			font-size: 22px
+			color: #4172e2
+			margin: 30px 0
+		a.btn
+			margin-bottom: 30px
+
+
+.open-cafe-popup
+	a.btn
+		margin: 200px 200px
+
+
+.form-popup
+	position: relative
+	max-width: 100%
+	width: 470px
+	background-color: #DAE1E9
+	border-radius: 5px
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+	text-align: center
+	padding: 50px
+	margin: 0 auto
+	h3
+		text-transform: uppercase
+		font-size: 20px
+		font-family: "TahomaBold", sans-serif
+		margin-top: 10px
+		margin-bottom: 5px
+	p
+		font-size: 14px
+		color: #909099
+		width: auto
+		margin-bottom: 15px
+	input
+		width: 100%
+		border-radius: 3px
+		border: 1px solid #dddddd
+		margin: 5px	0
+		background-color: #fff
+		outline: none
+		padding: 7px
+		margin-bottom: 20px
+	button.btn
+		margin: 10px 0 0
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
